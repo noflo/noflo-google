@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git://github.com/noflo/noflo-google.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "undefined/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "dependencies": {
     "googleapis": "^1.0.11",
     "noflo": "~0.5.0"
@@ -30,7 +25,7 @@
     "grunt-contrib-watch": "~0.3.1",
     "grunt-noflo-manifest": "~0.1.11"
   },
-  "keywords": [],
+  "keywords": ["noflo"],
   "noflo": {
     "icon": "google",
     "components": {
