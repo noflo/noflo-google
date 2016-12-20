@@ -19,7 +19,6 @@
     "chai": "^3.5.0",
     "coffee-script": "^1.12.2",
     "grunt": "^1.0.1",
-    "grunt-cafe-mocha": "~0.1.12",
     "grunt-coffeelint": "^0.0.16",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-mocha-test": "^0.13.2",
