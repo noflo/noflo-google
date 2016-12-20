@@ -29,7 +29,6 @@ module.exports = ->
           'level': 'ignore'
 
   # Grunt plugins used for building
-  @loadNpmTasks 'grunt-contrib-coffee'
   @loadNpmTasks 'grunt-noflo-manifest'
 
   # Grunt plugins used for testing
