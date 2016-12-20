@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "googleapis": "^1.0.11",
+    "googleapis": "^8.0.0",
     "noflo": "0.x >= 0.5"
   },
   "devDependencies": {
