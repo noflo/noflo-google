@@ -13,30 +13,22 @@
   "license": "MIT",
   "dependencies": {
     "googleapis": "^17.1.0",
-    "noflo": "1.0.0"
+    "noflo": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.0.0",
-    "coffee-script": "^1.12.2",
-    "grunt": "^1.0.1",
-    "grunt-coffeelint": "^0.0.16",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-test": "^0.13.2",
-    "grunt-noflo-manifest": "^0.1.12",
+    "coffeescript": "^2.0.2",
+    "coffeelint": "^2.0.7",
     "mocha": "^4.0.0"
   },
   "keywords": [
     "noflo"
   ],
   "noflo": {
-    "icon": "google",
-    "components": {
-      "Authorize": "components/Authorize.coffee",
-      "GetClient": "components/GetClient.coffee",
-      "GetClientWithCredentials": "components/GetClientWithCredentials.coffee"
-    }
+    "icon": "google"
   },
   "scripts": {
-    "test": "grunt test"
+    "pretest": "coffeelint -f .coffeelint.json -r components",
+    "test": "mocha --require coffeescript/register -R spec -t 2000 spec/*.coffee"
   }
 }
